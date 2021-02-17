@@ -9,6 +9,7 @@ import { ResultComponent } from "./components/result/result.component";
 import { SearchComponent } from "./components/search/search.component";
 import { MatIconModule } from "@angular/material/icon";
 import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, ResultComponent, SearchComponent],
@@ -17,7 +18,8 @@ import { FormsModule } from "@angular/forms";
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
