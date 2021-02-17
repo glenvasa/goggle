@@ -35,8 +35,8 @@ export class ResultComponent implements OnInit, OnDestroy {
   }
 
   search(form:NgForm):void{
-    const{search_term} =form.value;
-    this.term =search_term;
+    const{search_term} = form.value;
+    this.term = search_term;
     this.subs.push(
       this.searchService.getSearchData(search_term).subscribe((data: GoogleResponse)=>{
         this.results = data;
